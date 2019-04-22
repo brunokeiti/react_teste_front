@@ -41,11 +41,13 @@ class App extends React.Component<any, any> {
     return (
       <div className="app">
         <div className="page">
-          <img className="page-pinap" src={pinap}/>
           {this.state.logged &&
             <React.Fragment>
               <img className="page-add" src={iconAdd} onClick={() => this.toggleAddEdit(-1)}/>
-              <div className="page-notification" onClick={this.toggleNotification}><span>99</span> notificações</div>
+              <div className="page-notification" onClick={this.toggleNotification}>
+                <img className="page-notification-pinap" src={pinap}/>
+                <span>99</span>
+              </div>
             </React.Fragment>
           }
           {!this.state.logged &&

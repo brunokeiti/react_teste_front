@@ -270,18 +270,11 @@ button {outline:0 !important;}
   background-color: #ffffff;
   border-radius:20px;
   padding:70px 15px 15px;
-  &-pinap{
-    width:50px;
-    height:50px;
-    position: absolute;
-    left:10px;
-    top:10px;
-  }
   &-add{
     width:50px;
     height:50px;
     position:absolute;
-    left:60px;
+    left:10px;
     top:10px;
     cursor:pointer;
   }
@@ -306,15 +299,21 @@ button {outline:0 !important;}
   }
   &-notification{
     position: absolute;
-    top:18px;
+    top:10px;
     right: 130px;
     color:$pineapple4;
     font-size: 1rem;
-    width:1305x;
-    padding:5px 5px 5px 15px;
-    height:35px;
+    width:50px;
+    height:50px;
     cursor:pointer;
+    &-pinap{
+      width:50px;
+      height:50px;
+    }
     span{
+      position: absolute;
+      right:0px;
+      bottom:0px;
       text-align: center;
       display:inline-block;
       width:25px;
