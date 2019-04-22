@@ -40,5 +40,37 @@
       "date": "12/12/2012",
       "rating": 4
     }
+  ],
+  "notifications":[
+    {
+      "message": "Razz Berry has been added!"
+    },
+    {
+      "message": "Razz Berry has been removed."
+    },
+    {
+      "message": "Pinap Berry has been added!"
+    },
+    {
+      "message": "Pinap Berry has been removed."
+    },
+    {
+      "message": "Nanab Berry has been added!"
+    },
+    {
+      "message": "Nanab Berry has been removed."
+    },
+    {
+      "message": "Golden Razz Berry has been added!"
+    },
+    {
+      "message": "Golden Razz Berry has been removed."
+    },
+    {
+      "message": "Silver Pinap Berry has been added!"
+    },
+    {
+      "message": "Silver Pinap Berry has been removed."
+    }
   ]
 }

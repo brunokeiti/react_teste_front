@@ -5,6 +5,7 @@ import Login from './components/login';
 import AddEdit from './components/addEdit';
 import Details from './components/details';
 import Delete from './components/delete';
+import Notifications from './components/notifications';
 
 import pinap from './images/fruits/Pinap_Berry.png';
 import iconDetail from './images/icon-detail.png';
@@ -16,12 +17,13 @@ import data from './mock.json';
 
 class App extends React.Component<any, any> {
   public state = {
-    logged: false,
+    logged: true,
     toggleLogin: false,
     alertLogin: "",
     toggleAddEdit: false,
     toggleDetails: false,
     toggleDelete: false,
+    toggleNotification: false,
     editIndex: -1
   }
   constructor(props: any) {
@@ -33,6 +35,7 @@ class App extends React.Component<any, any> {
     this.toggleAddEdit = this.toggleAddEdit.bind(this);
     this.toggleDetails = this.toggleDetails.bind(this);
     this.toggleDelete = this.toggleDelete.bind(this);
+    this.toggleNotification = this.toggleNotification.bind(this);
   }
   render() {
     return (
@@ -40,7 +43,10 @@ class App extends React.Component<any, any> {
         <div className="page">
           <img className="page-pinap" src={pinap}/>
           {this.state.logged &&
-            <img className="page-add" src={iconAdd} onClick={() => this.toggleAddEdit(-1)}/>
+            <React.Fragment>
+              <img className="page-add" src={iconAdd} onClick={() => this.toggleAddEdit(-1)}/>
+              <div className="page-notification" onClick={this.toggleNotification}><span>99</span> notificações</div>
+            </React.Fragment>
           }
           {!this.state.logged &&
             <button className="page-login" onClick={this.toggleLogin}>Login</button>
@@ -93,6 +99,9 @@ class App extends React.Component<any, any> {
         {this.state.toggleDelete &&
           <Delete toggle={this.toggleDelete} index={this.state.editIndex}/>
         }
+        {this.state.toggleNotification &&
+          <Notifications toggle={this.toggleNotification} />
+        }
       </div>
     );
   }
@@ -122,6 +131,9 @@ class App extends React.Component<any, any> {
   }
   public toggleDelete(n: number){
     this.setState({ toggleDelete: !this.state.toggleDelete, editIndex: n });
+  }
+  public toggleNotification(){
+    this.setState({ toggleNotification: !this.state.toggleNotification });
   }
 
 }
