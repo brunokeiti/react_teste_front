@@ -25,10 +25,10 @@ class Login extends React.Component<any, any> {
             <img className="login-icon" src={iconPass} />
             <input type="password" placeholder="senha" value={this.state.pass} onChange={this.handleChangePass} />
           </div>
+          <button onClick={() => this.props.validate(this.state.email, this.state.pass)}>Login</button>
           {this.props.alert !== "" &&
             <p className="login-alert">{this.props.alert}</p>
           }
-          <button onClick={() => this.props.validate(this.state.email, this.state.pass)}>Login</button>
         </div>
       </div>
     );
