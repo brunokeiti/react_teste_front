@@ -1,0 +1,44 @@
+{
+  "fruits": [
+    {
+      "number": 1,
+      "image":"Razz_Berry",
+      "name": "Razz Berry",
+      "description": "Feed this to a Pokémon, and it will be easier to catch on your next throw.",
+      "date": "12/12/2012",
+      "rating": 2
+    },
+    {
+      "number": 2,
+      "image":"Pinap_Berry",
+      "name": "Pinap Berry",
+      "description": "Feed this to a Pokémon to make it drop more candy.",
+      "date": "12/12/2012",
+      "rating": 3
+    },
+    {
+      "number": 3,
+      "image":"Nanab_Berry",
+      "name": "Nanab Berry",
+      "description": "Feed this to a Pokémon to calm it down, making it less erratic.",
+      "date": "12/12/2012",
+      "rating": 1
+    },
+    {
+      "number": 4,
+      "image":"Golden_Razz_Berry",
+      "name": "Golden Razz Berry",
+      "description": "Feed this to a wild Pokémon to make it much easier to catch. Feed this to a Pokémon on a Gym to fully restore its motivation.",
+      "date": "12/12/2012",
+      "rating": 5
+    },
+    {
+      "number": 5,
+      "image":"Silver_Pinap_Berry",
+      "name": "Silver Pinap Berry",
+      "description": "Feed this to a Pokémon to receive more Candy when you catch it and make it easier to catch.",
+      "date": "12/12/2012",
+      "rating": 4
+    }
+  ]
+}
